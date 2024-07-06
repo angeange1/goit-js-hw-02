@@ -1,7 +1,7 @@
 'use strict'
 
 function formatMessage(message, maxLength) {
-    if (message.length <= maxLength) {} else {message = `${message.slice (0, maxLength)}...`}
+    if (message.length <= maxLength) {} else {message = `${message.slice(0, maxLength)}...`}
     return message
 }
 
@@ -11,3 +11,7 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum
 console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
+// КРАЩЕ if (message.length > maxLength) {
+//     message = `${message.slice(0, maxLength)}...`;
+// }
